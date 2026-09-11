@@ -10,12 +10,12 @@
   <title>FlexSith // Tactical Smart Bottles</title>
 </head>
 <body>
-  <div class="alert-bar">
+  <div class="alert-bar hide-on-print">
     <span>BANGKOK WORKSHOP: ONLINE | 100% LEAK-TEST QA VERIFIED BEFORE SHIPMENT</span>
     <span>PROMPTPAY READY</span>
   </div>
 
-  <header class="tactical-nav">
+  <header class="tactical-nav hide-on-print">
     <div class="brand-group">
       <div class="logo-box">F</div>
       <div class="brand-text">
@@ -24,7 +24,7 @@
       </div>
     </div>
     <nav class="nav-links">
-      <a href="#home"><span>// 01</span> SHOP RIGS</a>
+      <a href="#shop"><span>// 01</span> SHOP RIGS</a>
       <a href="#features"><span>// 02</span> HARDWARE</a>
       <a href="#business"><span>// 03</span> E-BUSINESS MODEL</a>
     </nav>
@@ -33,11 +33,11 @@
     </button>
   </header>
 
-  <main>
+  <main class="hide-on-print">
     <!-- HERO SECTION -->
     <section id="home" class="hero-grid">
       <div class="hero-content">
-        <div class="sys-text">SYS.PROTOCOL // FLEX_SITH_V1 | GRID LAT: 13.7563° N, 100.5018° E [BKK]</div>
+        <div class="sys-text">SYS.PROTOCOL // FLEX_SITH_V2 | <span id="liveTime"></span></div>
         <h1>TACTICAL <span class="red-text">SMART BOTTLES.</span><br>ZERO BAG CLUTTER.</h1>
         <p>Pre-built modular water bottles engineered specifically for students, commuters, and travelers in Bangkok. Plug-and-play interchangeable modules with 0% installment plans and nationwide courier delivery.</p>
         
@@ -48,7 +48,7 @@
         </div>
 
         <div class="action-row">
-          <a href="#shop" class="btn-primary">CHOOSE YOUR MODULE (3 TIERS) →</a>
+          <a href="#shop" class="btn-primary">CHOOSE YOUR MODULE →</a>
           <a href="https://youtube.com/shorts/7KhmTBz2Fow?si=_bS8jFVizsaZULYX" target="_blank" class="btn-secondary">⏵ PROTOTYPE LAB VIDEO</a>
         </div>
       </div>
@@ -91,8 +91,9 @@
               <div class="price">฿799</div>
               <div class="margin-data">Direct Cost: ฿350 <span class="cyan-text">Margin: ฿449 (56%)</span></div>
             </div>
-            <div class="card-actions">
-              <button class="btn-primary" onclick="addToCart('FlexBottle 500ml', 799)">ORDER BASE</button>
+            <div class="card-actions duo-btn">
+              <button class="btn-secondary" onclick="inspectModule('Base Bottle')">👁 INSPECT</button>
+              <button class="btn-primary" onclick="addToCart('FlexBottle 500ml', 799)">ORDER</button>
             </div>
           </div>
         </div>
@@ -114,8 +115,9 @@
               <div class="price">฿1,299</div>
               <div class="margin-data">Direct Cost: ฿750 <span class="cyan-text">Margin: ฿549 (42%)</span></div>
             </div>
-            <div class="card-actions">
-              <button class="btn-primary red-btn" onclick="addToCart('FlexSith Bundle', 1299)">ORDER BUNDLE</button>
+            <div class="card-actions duo-btn">
+              <button class="btn-secondary" onclick="inspectModule('Flagship Bundle')">👁 INSPECT</button>
+              <button class="btn-primary red-btn" onclick="addToCart('FlexSith Bundle', 1299)">ORDER</button>
             </div>
           </div>
         </div>
@@ -127,18 +129,19 @@
             <span class="stock-tag">ACCESSORY READY</span>
           </div>
           <div class="img-wrapper" style="padding: 40px; text-align: center; color: var(--cyan);">
-            <h1 style="font-size: 4rem; margin: 0;">☼</h1>
+            <h1 style="font-size: 4rem; margin: 0; text-shadow: 0 0 20px var(--cyan);">☼</h1>
           </div>
           <div class="card-body">
             <h3>Lamp & Blender Modules</h3>
             <div class="stat-row"><span>Lamp:</span> <span class="cyan-text">LED Camping Light</span></div>
             <div class="stat-row"><span>Blender:</span> <span class="cyan-text">Juice Mixer</span></div>
             <div class="price-block">
-              <div class="price">฿299 - ฿399</div>
+              <div class="price">฿299</div>
               <div class="margin-data">Modular Upgrades <span class="cyan-text">Swappable Base</span></div>
             </div>
-            <div class="card-actions">
-              <button class="btn-secondary" onclick="addToCart('Utility Module', 299)">ADD MODULE</button>
+            <div class="card-actions duo-btn">
+              <button class="btn-secondary" onclick="inspectModule('Utility Modules')">👁 INSPECT</button>
+              <button class="btn-secondary outline-cyan" onclick="addToCart('Utility Module', 299)">ADD</button>
             </div>
           </div>
         </div>
@@ -165,25 +168,6 @@
         <p>How FlexSith operates with zero retail mall lease overhead—reinvesting 100% of operational savings into high-grade silicone, module QA testing, and instant courier dispatch.</p>
       </div>
 
-      <div class="pillars-grid">
-        <div class="pillar">
-          <div class="icon">🛡️</div>
-          <h4>100% PRE-TESTED</h4>
-          <p>Leak-tested and magnetically verified before shipping.</p>
-        </div>
-        <div class="pillar">
-          <div class="icon">⚡</div>
-          <h4>PLUG & PLAY</h4>
-          <p>Zero assembly needed. Twist lock engages in under 3 seconds.</p>
-        </div>
-        <div class="pillar">
-          <div class="icon">📊</div>
-          <h4>TRANSPARENT MARGINS</h4>
-          <p>Fixed package pricing with real unit economics displayed online.</p>
-        </div>
-      </div>
-
-      <!-- Profit Simulator Box -->
       <div class="profit-dashboard">
         <div class="dashboard-grid">
           <div class="dash-box">
@@ -226,39 +210,10 @@
     </section>
   </main>
 
-  <footer class="tactical-footer">
-    <div class="footer-grid">
-      <div>
-        <div class="brand-group">
-          <div class="logo-box">F</div>
-          <div class="brand-text"><strong>ELIO PRE BUILD // FLEX SITH</strong></div>
-        </div>
-        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.85rem;">
-          Bangkok's tactical pre-built digital workshop. Delivering optimized performance per baht with zero hassle.
-        </p>
-      </div>
-      <div>
-        <h4>PRE-BUILT RIGS</h4>
-        <ul>
-          <li>Study Base (฿799)</li>
-          <li>eSport Bundle ★ (฿1,299)</li>
-          <li>Lamp Module (฿299)</li>
-        </ul>
-      </div>
-      <div>
-        <h4>BANGKOK HQ</h4>
-        <ul style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
-          <li>📍 SITM Tech Complex, Bangkok</li>
-          <li>📞 +66 (0) 945596202</li>
-          <li>👤 Student ID: 240702404819 (Phone Tay Za)</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <div class="modal hidden" id="cartModal">
+  <!-- MODALS -->
+  <div class="modal hidden hide-on-print" id="cartModal">
     <div class="modal-box">
-      <button class="close-btn" onclick="closeCart()">✕</button>
+      <button class="close-btn" onclick="closeModal('cartModal')">✕</button>
       <div class="sys-text">SYS // CART_CHECKOUT</div>
       <h2 style="margin-bottom: 20px;">TACTICAL CART</h2>
       <div id="cartItems"></div>
@@ -266,11 +221,22 @@
         <span>TOTAL AUTHORIZATION</span>
         <strong id="cartTotal" class="cyan-text">฿0</strong>
       </div>
-      <button class="btn-primary red-btn" style="width: 100%; margin-top: 20px;" onclick="checkout()">INITIATE PROMPTPAY</button>
+      <button id="checkoutBtn" class="btn-primary red-btn" style="width: 100%; margin-top: 20px;" onclick="processCheckout()">INITIATE PROMPTPAY</button>
     </div>
   </div>
 
-  <div class="toast" id="toast"></div>
+  <div class="modal hidden" id="receiptModal">
+    <div class="modal-box receipt-box">
+      <button class="close-btn hide-on-print" onclick="closeModal('receiptModal')" style="color: #000;">✕</button>
+      <div id="receiptContent"></div>
+      <div class="card-actions duo-btn hide-on-print" style="margin-top: 30px;">
+        <button class="btn-secondary" onclick="closeModal('receiptModal')" style="color: #000; border-color: #000;">CLOSE</button>
+        <button class="btn-primary" onclick="window.print()" style="background: #000; color: #fff;">🖨 PRINT RECEIPT</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast hide-on-print" id="toast"></div>
   <script src="app.js"></script>
 </body>
 </html>
