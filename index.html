@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff3344">
+  <meta name="description" content="FlexSith Tactical Smart Bottle Workshop">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+  <title>FlexSith // Tactical Smart Bottles</title>
+</head>
+<body>
+  <div class="alert-bar">
+    <span>BANGKOK WORKSHOP: ONLINE | 100% LEAK-TEST QA VERIFIED BEFORE SHIPMENT</span>
+    <span>PROMPTPAY READY</span>
+  </div>
+
+  <header class="tactical-nav">
+    <div class="brand-group">
+      <div class="logo-box">F</div>
+      <div class="brand-text">
+        <strong>FLEX SITH</strong><br>
+        <small>TACTICAL BOTTLE WORKSHOP • BKK HQ</small>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#home"><span>// 01</span> SHOP RIGS</a>
+      <a href="#features"><span>// 02</span> HARDWARE</a>
+      <a href="#business"><span>// 03</span> E-BUSINESS MODEL</a>
+    </nav>
+    <button class="tactical-cart" onclick="openCart()">
+      <span class="cart-icon">🛒</span> TACTICAL CART <span id="cartCount" class="badge">0</span>
+    </button>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-grid">
+      <div class="hero-content">
+        <div class="sys-text">SYS.PROTOCOL // FLEX_SITH_V1 | GRID LAT: 13.7563° N, 100.5018° E [BKK]</div>
+        <h1>TACTICAL <span class="red-text">SMART BOTTLES.</span><br>ZERO BAG CLUTTER.</h1>
+        <p>Pre-built modular water bottles engineered specifically for students, commuters, and travelers in Bangkok. Plug-and-play interchangeable modules with 0% installment plans and nationwide courier delivery.</p>
+        
+        <div class="tag-row">
+          <span class="cyber-tag">🎯 All Skill Levels & Commuters</span>
+          <span class="cyber-tag">🚚 Nationwide Delivery</span>
+          <span class="cyber-tag red-outline">฿299 – ฿1,299</span>
+        </div>
+
+        <div class="action-row">
+          <a href="#shop" class="btn-primary">CHOOSE YOUR MODULE (3 TIERS) →</a>
+          <a href="https://youtube.com/shorts/7KhmTBz2Fow?si=_bS8jFVizsaZULYX" target="_blank" class="btn-secondary">⏵ PROTOTYPE LAB VIDEO</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="qa-badge">
+          <small>QA STABILITY PASS</small>
+          <strong>MAX TEMP: 12-24H INSULATION</strong>
+        </div>
+        <img src="27054.jpg" alt="FlexSith Bottle">
+        <div class="price-overlay">
+          <small>0% CREDIT CARD FINANCING</small>
+          <strong>฿79 / MONTH (10 MOS)</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOP SECTION -->
+    <section id="shop" class="section-container">
+      <div class="section-header">
+        <div class="sys-text">⨁ 3 OPTIMIZED TIERS // ฿299 – ฿1,299</div>
+        <h2>CURATED <span class="cyan-text">MODULAR RIGS</span></h2>
+        <p>Each module has been stress-tested, leak-checked, and configured for seamless magnetic swapping.</p>
+      </div>
+
+      <div class="product-grid">
+        <!-- Base Bottle -->
+        <div class="tactical-card">
+          <div class="card-header">
+            <span class="cyan-dot">■ Base Class</span>
+            <span class="stock-tag">ENTRY STARTER</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="27054.jpg" alt="Base Bottle">
+          </div>
+          <div class="card-body">
+            <h3>FlexBottle 500ml</h3>
+            <div class="stat-row"><span>Storage:</span> <span class="cyan-text">500ML Capacity</span></div>
+            <div class="stat-row"><span>Material:</span> <span class="cyan-text">Food-Grade Silicone</span></div>
+            <div class="price-block">
+              <div class="price">฿799</div>
+              <div class="margin-data">Direct Cost: ฿350 <span class="cyan-text">Margin: ฿449 (56%)</span></div>
+            </div>
+            <div class="card-actions">
+              <button class="btn-primary" onclick="addToCart('FlexBottle 500ml', 799)">ORDER BASE</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Power Bank Bundle -->
+        <div class="tactical-card highlight-card">
+          <div class="card-header">
+            <span class="red-dot">■ Flagship Class</span>
+            <span class="stock-tag red-bg">MOST POPULAR ★</span>
+          </div>
+          <div class="img-wrapper">
+            <img src="27055.jpg" alt="Power Bank Bundle">
+          </div>
+          <div class="card-body">
+            <h3>FlexSith + Power & Fan</h3>
+            <div class="stat-row"><span>Power:</span> <span class="cyan-text">5000mAh Output</span></div>
+            <div class="stat-row"><span>Cooling:</span> <span class="cyan-text">90° Adjustable Fan</span></div>
+            <div class="price-block">
+              <div class="price">฿1,299</div>
+              <div class="margin-data">Direct Cost: ฿750 <span class="cyan-text">Margin: ฿549 (42%)</span></div>
+            </div>
+            <div class="card-actions">
+              <button class="btn-primary red-btn" onclick="addToCart('FlexSith Bundle', 1299)">ORDER BUNDLE</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accessories -->
+        <div class="tactical-card">
+          <div class="card-header">
+            <span class="yellow-dot">■ Utility Class</span>
+            <span class="stock-tag">ACCESSORY READY</span>
+          </div>
+          <div class="img-wrapper" style="padding: 40px; text-align: center; color: var(--cyan);">
+            <h1 style="font-size: 4rem; margin: 0;">☼</h1>
+          </div>
+          <div class="card-body">
+            <h3>Lamp & Blender Modules</h3>
+            <div class="stat-row"><span>Lamp:</span> <span class="cyan-text">LED Camping Light</span></div>
+            <div class="stat-row"><span>Blender:</span> <span class="cyan-text">Juice Mixer</span></div>
+            <div class="price-block">
+              <div class="price">฿299 - ฿399</div>
+              <div class="margin-data">Modular Upgrades <span class="cyan-text">Swappable Base</span></div>
+            </div>
+            <div class="card-actions">
+              <button class="btn-secondary" onclick="addToCart('Utility Module', 299)">ADD MODULE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HARDWARE SPECS -->
+    <section id="features" class="section-container">
+      <div class="section-header center">
+        <div class="sys-text">⨁ LAB TESTING // REAL-WORLD HARDWARE BENCHMARKS</div>
+        <h2>VERIFIED <span class="red-text">MODULE MATRIX</span></h2>
+        <p>Transparent hardware capabilities tested in 30°C Bangkok ambient environments.</p>
+      </div>
+      <div class="spec-image-container">
+        <img src="33266.jpg" alt="Hardware Breakdown">
+      </div>
+    </section>
+
+    <!-- BUSINESS ECONOMICS -->
+    <section id="business" class="section-container">
+      <div class="section-header">
+        <div class="sys-text">📈 VALUE ECONOMICS & TRANSPARENCY</div>
+        <h2>E-BUSINESS <span class="cyan-text">VALUE ARCHITECTURE</span></h2>
+        <p>How FlexSith operates with zero retail mall lease overhead—reinvesting 100% of operational savings into high-grade silicone, module QA testing, and instant courier dispatch.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="icon">🛡️</div>
+          <h4>100% PRE-TESTED</h4>
+          <p>Leak-tested and magnetically verified before shipping.</p>
+        </div>
+        <div class="pillar">
+          <div class="icon">⚡</div>
+          <h4>PLUG & PLAY</h4>
+          <p>Zero assembly needed. Twist lock engages in under 3 seconds.</p>
+        </div>
+        <div class="pillar">
+          <div class="icon">📊</div>
+          <h4>TRANSPARENT MARGINS</h4>
+          <p>Fixed package pricing with real unit economics displayed online.</p>
+        </div>
+      </div>
+
+      <!-- Profit Simulator Box -->
+      <div class="profit-dashboard">
+        <div class="dashboard-grid">
+          <div class="dash-box">
+            <small>GROSS MONTHLY REVENUE (400 UNITS)</small>
+            <div class="dash-num">฿319,600</div>
+            <span>Avg ฿799 / base rig</span>
+          </div>
+          <div class="dash-box">
+            <small>VARIABLE COGS</small>
+            <div class="dash-num">฿140,000</div>
+            <span>฿350 x 400 (Materials & Fulfillment)</span>
+          </div>
+          <div class="dash-box">
+            <small>FIXED WORKSHOP OPEX</small>
+            <div class="dash-num">฿80,000</div>
+            <span>Ad spend, hosting, storage</span>
+          </div>
+          <div class="dash-box highlight-dash">
+            <small>NET MONTHLY OPERATING PROFIT</small>
+            <div class="dash-num cyan-text">฿99,600</div>
+            <span>Net Margin: 31.1% of Revenue</span>
+          </div>
+        </div>
+        
+        <div class="bep-tracker">
+          <div class="bep-header">
+            <span><span class="cyan-text">✔</span> BREAK-EVEN FEASIBILITY STATUS:</span>
+            <span><span class="cyan-text">✔</span> FEASIBLE (221 UNITS ABOVE BREAK-EVEN)</span>
+          </div>
+          <div class="bep-bar">
+            <div class="bep-fill" style="width: 44.75%;"></div>
+            <div class="bep-marker">179 Units (BEP)</div>
+          </div>
+          <div class="bep-footer">
+            <span>Fixed expenses of ฿80,000 are covered at only <strong>179 units/month</strong></span>
+            <span class="cyan-text">High capital turnover business model.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="tactical-footer">
+    <div class="footer-grid">
+      <div>
+        <div class="brand-group">
+          <div class="logo-box">F</div>
+          <div class="brand-text"><strong>ELIO PRE BUILD // FLEX SITH</strong></div>
+        </div>
+        <p style="margin-top: 15px; color: var(--text-muted); font-size: 0.85rem;">
+          Bangkok's tactical pre-built digital workshop. Delivering optimized performance per baht with zero hassle.
+        </p>
+      </div>
+      <div>
+        <h4>PRE-BUILT RIGS</h4>
+        <ul>
+          <li>Study Base (฿799)</li>
+          <li>eSport Bundle ★ (฿1,299)</li>
+          <li>Lamp Module (฿299)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>BANGKOK HQ</h4>
+        <ul style="color: var(--text-muted); font-size: 0.85rem; line-height: 1.8;">
+          <li>📍 SITM Tech Complex, Bangkok</li>
+          <li>📞 +66 (0) 945596202</li>
+          <li>👤 Student ID: 240702404819 (Phone Tay Za)</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal hidden" id="cartModal">
+    <div class="modal-box">
+      <button class="close-btn" onclick="closeCart()">✕</button>
+      <div class="sys-text">SYS // CART_CHECKOUT</div>
+      <h2 style="margin-bottom: 20px;">TACTICAL CART</h2>
+      <div id="cartItems"></div>
+      <div class="cart-total">
+        <span>TOTAL AUTHORIZATION</span>
+        <strong id="cartTotal" class="cyan-text">฿0</strong>
+      </div>
+      <button class="btn-primary red-btn" style="width: 100%; margin-top: 20px;" onclick="checkout()">INITIATE PROMPTPAY</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
