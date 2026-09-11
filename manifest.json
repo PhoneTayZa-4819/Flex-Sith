@@ -1,0 +1,10 @@
+{
+  "name": "FlexSith Tactical Store",
+  "short_name": "FlexSith",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b111a",
+  "theme_color": "#ff3344",
+  "description": "Tactical Modular Smart Bottles",
+  "icons": []
+}
